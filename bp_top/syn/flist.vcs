@@ -72,6 +72,8 @@ $BASEJUMP_STL_DIR/bsg_mem/bsg_cam_1r1w_tag_array.v
 $BASEJUMP_STL_DIR/bsg_mem/bsg_mem_1r1w.v
 $BASEJUMP_STL_DIR/bsg_mem/bsg_mem_1r1w_one_hot.v
 $BASEJUMP_STL_DIR/bsg_mem/bsg_mem_1r1w_sync.v
+$BASEJUMP_STL_DIR/bsg_mem/bsg_mem_1r1w_sync_mask_write_bit.v
+$BASEJUMP_STL_DIR/bsg_mem/bsg_mem_1r1w_sync_mask_write_bit_synth.v
 $BASEJUMP_STL_DIR/bsg_mem/bsg_mem_1r1w_sync_synth.v
 $BASEJUMP_STL_DIR/bsg_mem/bsg_mem_1r1w_synth.v
 $BASEJUMP_STL_DIR/bsg_mem/bsg_mem_1rw_sync.v
@@ -180,6 +182,7 @@ $BP_COMMON_DIR/src/v/bsg_parallel_in_serial_out_passthrough_dynamic.v
 $BP_COMMON_DIR/src/v/bsg_wormhole_stream_control.v
 $BP_COMMON_DIR/src/v/bsg_wormhole_stream_in.v
 $BP_COMMON_DIR/src/v/bsg_wormhole_stream_out.v
+$BP_COMMON_DIR/src/v/bsg_mem_1r1w_sync_mask_write_bit_reshape.v
 $BP_COMMON_DIR/src/v/bp_mmu.sv
 $BP_COMMON_DIR/src/v/bp_pma.sv
 $BP_COMMON_DIR/src/v/bp_tlb.sv
@@ -199,6 +202,7 @@ $BP_BE_DIR/src/v/bp_be_calculator/bp_be_pipe_sys.sv
 $BP_BE_DIR/src/v/bp_be_calculator/bp_be_ptw.sv
 $BP_BE_DIR/src/v/bp_be_calculator/bp_be_rec_to_fp.sv
 # Checker
+$BP_BE_DIR/src/v/bp_be_checker/bp_be_cmd_queue.sv
 $BP_BE_DIR/src/v/bp_be_checker/bp_be_detector.sv
 $BP_BE_DIR/src/v/bp_be_checker/bp_be_director.sv
 $BP_BE_DIR/src/v/bp_be_checker/bp_be_instr_decoder.sv

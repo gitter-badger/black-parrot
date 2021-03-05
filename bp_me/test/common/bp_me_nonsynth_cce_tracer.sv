@@ -117,7 +117,7 @@ module bp_me_nonsynth_cce_tracer
     if (~reset_i) begin
       // inbound messages
       if (lce_req_header_v_i & lce_req_header_ready_and_i) begin
-        if (lce_req.msg_type.req == e_bedrock_req_rd | lce_req.msg_type.req == e_bedrock_req_wr) begin
+        if (lce_req.msg_type.req == e_bedrock_req_rd_miss | lce_req.msg_type.req == e_bedrock_req_wr_miss) begin
         $fdisplay(file, "[%t]: CCE[%0d] REQ LCE[%0d] addr[%H] wg[%0d] wr[%0b] ne[%0b] uc[%0b] lruWay[%0d]"
                  , $time, lce_req_payload.dst_id, lce_req_payload.src_id, lce_req.addr
                  , lce_req.addr[lg_block_size_in_bytes_lp +: lg_cce_way_groups_lp]
